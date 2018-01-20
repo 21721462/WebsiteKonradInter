@@ -1,0 +1,320 @@
+@smartphones: ~"only screen and (max-width: 400px)";
+
+body {
+	font-family: Verdana;
+	max-width: 1000px;
+	margin:0 auto;
+	background-color: #f2f3f2;
+}
+
+h3{
+	color: #EA687E;
+}
+
+nav {
+	width: 100%;
+	max-width: 1000px;
+	position: fixed;
+	background-color: #FFFFFF;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 8px 10px 5px 10px;
+		overflow: hidden;
+		background-color: #FFFFFF;
+
+		li {
+			float: right;
+			a {
+				font-weight: bold;
+				display: block;
+				color: black;
+				text-align: center;
+				padding: 15px 15px;
+				text-decoration: none;
+			}
+
+			a:hover:not(.cmp){
+				background-color: #FFFFFF;
+				border: 1px solid #EA687E;
+				border-radius: 3px;
+			}
+		}
+	}
+
+
+}
+
+#compname {
+	float: left;
+
+	a {
+		font-size: 20px;
+		color: #EA687E;
+
+	}
+}
+
+.banner {
+
+	font-weight: bold;
+	padding-top: 20%;
+	padding-bottom: 1%;
+	margin-top: 0px;
+	text-align: center; 
+	
+	background: linear-gradient(100deg, #D211F2, #FEBE08);
+
+	.textbox {
+		box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+		width: 100%;
+		margin-top: 15%;
+		padding-bottom: 3%;
+		background-color: #FFFFFF;
+
+		h3 {
+			padding-top: 2%;
+			padding-left: 5%;
+			text-align: left;
+		}
+
+		p {
+			padding-left: 5%;
+			padding-right: 5%;
+			font-weight: normal;
+			text-align: left;
+			font-size: 11px;
+			-moz-column-count: 2;
+			-moz-column-gap: 30px;
+			-webkit-column-count: 2;
+			-webkit-column-gap: 30px;
+			column-count: 2;
+			column-gap: 30px;
+		}
+
+		
+	}
+
+	h1 {
+		font-weight: bold;
+		text-align: center;
+		color: #FFFFFF;
+	}
+
+	h2 {
+		font-weight: bold;
+		text-align: center;
+		color: #FFFFFF;
+	}
+	button {
+		font-weight: bold;
+		background-color: Transparent;
+		text-align: center;
+		border: 2px solid #FFFFFF;
+		border-radius: 5px;
+		margin: 0% 3% 0% 3%;
+		padding: 3px 25px 3px 25px;
+		color: #FFFFFF;
+		
+		&:hover {
+			background-color: #FFFFFF;
+			cursor: pointer;
+			color: #EA687E;
+  
+		}
+	}
+
+}
+
+footer {
+	background-color: #FFFFFF;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: normal 16px sans-serif;
+
+	padding: 20px 50px;
+	
+	.center {
+		display: inline-block;
+		p {
+			text-align: left;
+			font-size: 10px;
+			font-weight: bold;
+			
+		}
+	}
+	
+	.compfooter
+	{
+		display:inline-block;
+		color: #EA687E;
+		float: left;
+		margin-right: 28%;
+		font-size: 15px;
+
+	}
+
+	.right {
+		
+		float: right;
+		display: inline-block;
+		p {
+			text-align: left;
+			font-size: 10px;
+			font-weight: bold;
+		}
+	
+	}
+
+}
+
+.contact{
+	background-color: #FFFFFF;
+	max-width: 60%;
+	margin:3% 6% 3% 20%;
+	input[type=text]{
+
+		width: 90%;
+		padding: 12px, 20px;
+		margin: 1% 0% 0% 5%;
+		display: inline-block;
+		border: 1px solid #ccc;
+		border-radius: 3px;
+		cursor: pointer;
+
+	}
+
+	input[type=Submit]{
+		float: right;
+		padding: 1% 6% 1% 6%;
+		margin: 2% 5% 5% 5%;
+		color: #FFFFFF;
+		background-color: #fa5683;
+		border-radius: 3px;
+		border: 1px solid #fa5683;
+		cursor: pointer;
+		&:hover{
+			background-color: #EA687E;
+		}
+	}
+
+	textarea{
+		margin: 1% 0% 0% 5%;
+		
+		text-align: left;
+		width: 89%;
+		display: inline-block;
+		border: 1px solid #ccc;
+		border-radius: 3px;
+		cursor: pointer;
+
+	}
+
+	h1 {
+		text-align: center;
+		color: #EA687E;
+		margin-top: 5%;
+	}
+
+	fieldset{
+		border: 1px solid #ccc;
+		border-radius: 3px;
+	}
+}
+
+.products {
+	background-color: #FFFFFF;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	img {
+		max-width: 40%;
+		
+		padding: 5% 5% 5% 5%;
+		border-radius: 5px;
+	}
+
+	p {font-size: 11px;}
+
+	.prod1 {
+
+		@media @smartphones {
+			font-size: 12px;
+		}
+
+		margin: 2% 0% 2% 0%;
+		display: inline-block;
+		img {float: left;}
+
+		padding-bottom: 10%;
+		
+		button {
+			margin: 0% 15%;
+			
+		}
+
+		h3 {
+			margin-top: 3%;
+		}
+
+		p {
+			max-width: 85%;
+			margin: 2% 5% 5% 5%;
+		}
+	}
+
+	.prod2 
+	{
+		display: inline-block;
+		img {
+			display: inline-block;
+			float: right;
+			margin: 0% 2% 2% 0%;
+			}
+		p {
+			display: inline-block;
+			max-width: 40%;
+			margin: 0% 3%;
+		}
+
+		h3 
+		{
+			margin: 2% 3%;
+			display: inline-block;
+		}
+
+		button {
+			margin: 5% 15%;
+			
+		}
+
+	}
+
+	button {
+		font-weight: bold;
+		background-color: Transparent;
+		color: #EA687E;
+		text-align: center;
+		border: 2px solid #EA687E;
+		border-radius: 5px;
+		margin: 0% 3% 0% 3%;
+		padding: 3px 25px 3px 25px;
+		a {
+			text-decoration: none;
+			color: #EA687E;
+
+		}
+
+		&:hover {
+			background-color: #EA687E;
+			color: #FFFFFF;
+			cursor: pointer;
+  
+		}
+
+
+	}
+}
+
+
